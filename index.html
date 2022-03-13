@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="eg">
+  <head>
+    <title>Stroke Predictions</title>
+  </head>
+  <body>  
+    <div class="flexbox-container" style="display:flex;">
+      <div class="sidebar" style="flex:1;">
+     <img src="static\Screenshot 2022-02-09 022008.png"></div>
+
+     <div class="main" style="flex:1;">
+    <h1>Stroke Prediction</h1>
+    
+    <p>
+      Please Answer the following questions to find out if you are likely to
+      have a stroke
+    </p>
+    <hr />
+    <section>
+      <form action="prediction" method="POST">
+       
+        
+        <section class="gender">
+          <label for="gender">Gender: </label>
+          <select name="gender" id="gender">
+            <option value="female">female</option>
+            <option value="male">male</option>
+          </select>
+        </section>
+<br><br>
+
+        <section class="age">
+          <label for="age">Age as float: </label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            step="any"
+            required
+            min="0"
+          />
+        </section>
+      <br><br>
+
+        <section class="hypertension">
+          <label for="hypertension"
+            >Input if you have hypertension as either 1 for yes or 0 for no:
+          </label>
+          <select name="hypertension" id="hypertension">
+            <option value="1">1</option>
+            <option value="0">0</option>
+          </select>
+        </section>
+<br><br>
+
+        <section class="heartdisease">
+          <label for="heartdisease"
+            >Input if you have heart_disease as either 1 for yes or 0 for no:
+          </label>
+          <select name="heartdisease" id="heartdisease">
+            <option value="1">1</option>
+            <option value="0">0</option>
+          </select>
+        </section><br><br>
+        
+        <section class="ever_married">
+          <label for="ever_married">Have you ever been married: </label>
+          <select name="ever_married" id="ever_married">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </section><br><br>
+        
+        <section class="work_type">
+          <label for="work_type">Your current work type: </label>
+          <select name="work_type" id="work_type">
+            <option value="children">children</option>
+            <option value="Private">Private</option>
+            <option value="Never_worked">Never_worked</option>
+            <option value="Govt_job">Govt_job</option>
+            <option value="Self-employed">Self-employed</option>
+          </select>
+        </section><br><br>
+        
+        <section class="Residence_type">
+          <label for="Residence_type">Your residence type: </label>
+          <select name="Residence_type" id="Residence_type">
+            <option value="Rural">Rural</option>
+            <option value="Urban">Urban</option>
+          </select>
+        </section><br><br>
+        
+        <section class="avg_glucose_level">
+          <label for="avg_glucose_level"
+            >Your average glucose level as a float:
+          </label>
+          <input
+            type="number"
+            name="avg_glucose_level"
+            id="avg_glucose_level"
+            step="any"
+            required
+            min="0"
+          />
+        </section><br><br>
+        
+        <section class="bmi">
+          <label for="bmi"
+            >Your bmi as a float:
+          </label>
+          <input
+            type="number"
+            name="bmi"
+            id="bmi"
+            step="any"
+            required
+            min="0"
+          />
+        </section><br><br>
+        
+        <section class="smoking_status">
+          <label for="smoking_status">Your smoking_status: </label>
+          <select name="smoking_status" id="smoking_status">
+            <option value="formerly_smoked">Never_smoked</option>
+            <option value="smokes">formerly_smoked</option>
+            <option value="Never_smoked">smokes</option>
+          </select>
+        </section>  <br><br>
+        
+        <section class="submission">
+          <input type="submit" value="Submit" />
+        </section>
+    </section><br><br>
+    
+    <button type="reset" class="btn btn-warning fw-bold shadow">
+      Reset
+    </button>
+  </form>
+</div>
+</div>
+  </body>
+</html>

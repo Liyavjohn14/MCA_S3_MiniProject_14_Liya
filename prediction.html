@@ -1,0 +1,30 @@
+<html>
+<head> 
+    <title>Predictions</title>
+    <style>#trrr {
+      background: #FD586B;
+    color: #fff;
+    width: 25%;
+    padding: 45px 30px;
+    margin: 0 1% 10px;
+    border-radius: 25px;
+    }
+  </style>
+  </head>
+  <body bg><center>
+    <div id="trrr">
+      <div class="result">
+<h1>Results</h1></div>
+<div class="res">
+  <i class = "fas fa-heartbeat"></i>
+
+          {% block content %}
+          <h4>
+              <p>Are you likely to have a stroke: </p> 
+          </h4>
+          <p> {{ answer }} </p>
+          {% endblock %}
+</div>
+<a href="/"><INPUT TYPE="button" VALUE="HOME" onClick='index.html'></a>
+</body>
+</html>
